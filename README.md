@@ -11,3 +11,9 @@ Os arquivos que formam nossa aplicação React estão dentro da pasta `src`. Nel
 JSX é a sintaxe utilizada pelo React para desenvolvermos interfaces misturando Javascript e HTML.
 
 ## Importando arquivos CSS
+
+A pasta `styles` vai conter folhas de estilo CSS. Para importr, por exmeplo, o arquivo `global.css` ao nosso projeto basta utilizar o seguinte comando:
+
+```
+import './styles/global.css';
+```
