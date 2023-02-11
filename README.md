@@ -5,3 +5,7 @@ Vite funciona como um template básico, um ponto de partida com o mínimo necess
 ## Estrutura React
 
 Os arquivos que formam nossa aplicação React estão dentro da pasta `src`. Nela nós temos o `main.jsx`, que importa o arquivo `App.jxs` e renderiza seu conteúdo através do `index.html`.
+
+## JSX
+
+JSX é a sintaxe utilizada pelo React para desenvolvermos interfaces misturando Javascript e HTML.
