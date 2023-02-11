@@ -1,1 +1,1 @@
-# Fundamentos do React com [https://vitejs.dev/](ViteJS)
+# Fundamentos do React com [ViteJS](https://vitejs.dev/)
