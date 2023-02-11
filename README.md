@@ -12,7 +12,7 @@ JSX é a sintaxe utilizada pelo React para desenvolvermos interfaces misturando 
 
 ## Importando arquivos CSS
 
-A pasta `styles` vai conter folhas de estilo CSS. Para importr, por exmeplo, o arquivo `global.css` ao nosso projeto basta utilizar o seguinte comando:
+A pasta `styles` vai conter nossas folhas de estilo CSS. Para importar, por exemplo, o arquivo `global.css` ao nosso projeto basta adicionar o seguinte código ao arquivo `main.jsx`:
 
 ```
 import './styles/global.css';
