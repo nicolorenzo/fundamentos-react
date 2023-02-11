@@ -9,3 +9,5 @@ Os arquivos que formam nossa aplicação React estão dentro da pasta `src`. Nel
 ## JSX
 
 JSX é a sintaxe utilizada pelo React para desenvolvermos interfaces misturando Javascript e HTML.
+
+## Importando arquivos CSS
