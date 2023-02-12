@@ -20,7 +20,7 @@ import './styles/global.css';
 
 ## Componentes
 
-Uma parte muito importante do desenvolvimento em React é a componentização. Cada componente da nossa aplicação será uma pasta dentro de `components` e será reutilizável, além de ter uma folha de estilo e um `index.jsx` dedicada exclusivamente à ele. Observe a pasta `components/Lista`.
+Uma parte muito importante do desenvolvimento em React é a componentização. Cada componente da nossa aplicação será uma pasta dentro de `components` e será reutilizável, além de ter uma folha de estilo e um `index.jsx` dedicada exclusivamente à ele. Observe a pasta `components/Lista` e veja como criamos o componente referente aos itens da listagem de nossa aplicação.
 
 Depois de criar um componente, basta importá-lo:
 
