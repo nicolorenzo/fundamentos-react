@@ -43,4 +43,4 @@ export function Lista({ name, time }) {
 }
 ```
 
-Ou seja, o nome do aluno serão renderizados assim que o usuário informar esse dado no input, bem como a hora de chamada. Veremos como isso será feito a seguir.
+Ou seja, o nome do aluno será renderizadosassim que o usuário informar esse dado no input, bem como a hora de chamada. Veremos como isso será feito a seguir.
