@@ -13,8 +13,11 @@ h1 {
   font-size: 2.5em;
   margin-top: 1em;
 }
+input,
+button {
+  width: 30rem;
+}
 input {
-  max-width: 30rem;
   margin: 1.1em;
   padding: 1.1em;
   font-size: 1.1em;
