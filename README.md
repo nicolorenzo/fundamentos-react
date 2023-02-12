@@ -27,3 +27,20 @@ Depois de criar um componente, basta importá-lo:
 ```
 import { Lista } from '../../components/Lista';
 ```
+
+## Propriedades
+
+Os itens de nossa lista terão propriedades que serão passadas como parâmetros. Veja:
+
+```
+export function Lista({ name, time }) {
+  return (
+    <div className="lista">
+      <strong>{name}</strong>
+      <small>{time}</small>
+    </div>
+  );
+}
+```
+
+Ou seja, o nome do aluno serão renderizados assim que o usuário informar esse dado no input, bem como a hora de chamada. Veremos como isso será feito a seguir.

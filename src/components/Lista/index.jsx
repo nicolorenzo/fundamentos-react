@@ -1,10 +1,10 @@
 import './style.css';
 
-export function Lista() {
+export function Lista({ name, time }) {
   return (
     <div className="lista">
-      <strong>Nico Lorenzo</strong>
-      <small>10:10:10</small>
+      <strong>{name}</strong>
+      <small>{time}</small>
     </div>
   );
 }
