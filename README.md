@@ -44,3 +44,46 @@ export function Lista({ name, time }) {
 ```
 
 Ou seja, o nome do aluno será renderizadosassim que o usuário informar esse dado no input, bem como a hora de chamada. Veremos como isso será feito a seguir.
+
+## Estados
+
+Os estados são o que permitirão a manipulação desses dados. Para isso vamos começar importando o `useState` do React:
+
+```
+import React, { useState } from 'react';
+```
+
+O useState terá um array onde o primeiro item é uma variável que armazenará o conteúdo do estado, e o outro, uma função que atualizará esse estado:
+
+```
+const [studentName, setStudentName] = useState();
+```
+
+Agora quando o usuário digitar o nome de um aluno isso será armazenado na variável `studentName`. Porém precisamos também que isso seja apresentado na tela quando o botão 'Adicionar' for acionado, por isso criaremos uma função atrelada a ele e outra instância do `useState` que guardará esses nomes e horários em um array chamado `students`:
+
+```
+const [students, setStudents] = useState([]);
+function handleAddStudent() {
+    const newStudent = {
+      name: studentName,
+      time: new Date().toLocaleTimeString('pt-br', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+      }),
+    };
+
+    setStudents((prevState) => [...prevState, newStudent]);
+  }
+```
+
+E finalmente isso será renderizado no componente `Lista` através de uma função `map`:
+
+```
+  <button type="button" onClick={handleAddStudent}>
+    Adicionar
+  </button>
+  {students.map((student) => (
+        <Lista name={student.name} time={student.time} />
+      ))}
+```
