@@ -84,6 +84,6 @@ E finalmente isso será renderizado no componente `Lista` através de uma funç�
     Adicionar
   </button>
   {students.map((student) => (
-        <Lista name={student.name} time={student.time} />
+        <Lista name={student.name} time={student.time} key={student.time} />
       ))}
 ```
