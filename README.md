@@ -33,7 +33,7 @@ import { Lista } from '../../components/Lista';
 Os itens de nossa lista terão propriedades que serão passadas como parâmetros. Veja:
 
 ```
-export function Lista({ name, time }) {
+export function Lista({ name, time }: ListaProps) {
   return (
     <div className="lista">
       <strong>{name}</strong>
@@ -56,13 +56,13 @@ import React, { useState } from 'react';
 O useState terá um array onde o primeiro item é uma variável que armazenará o conteúdo do estado, e o outro, uma função que atualizará esse estado:
 
 ```
-const [studentName, setStudentName] = useState();
+const [studentName, setStudentName] = useState<ListaProps[]>();
 ```
 
 Agora quando o usuário digitar o nome de um aluno isso será armazenado na variável `studentName`. Porém precisamos também que isso seja apresentado na tela quando o botão 'Adicionar' for acionado, por isso criaremos uma função atrelada a ele e outra instância do `useState` que guardará esses nomes e horários em um array chamado `students`:
 
 ```
-const [students, setStudents] = useState([]);
+const [students, setStudents] = useState<ListaProps[]>([]);
 function handleAddStudent() {
     const newStudent = {
       name: studentName,

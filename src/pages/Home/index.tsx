@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 import './style.css';
 
-import { Lista } from '../../components/Lista';
+import { Lista, ListaProps } from '../../components/Lista';
 
 export function Home() {
-  const [studentName, setStudentName] = useState();
-  const [students, setStudents] = useState([]);
+  const [studentName, setStudentName] = useState('');
+  const [students, setStudents] = useState<ListaProps[]>([]);
 
   function handleAddStudent() {
     const newStudent = {

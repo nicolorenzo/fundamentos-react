@@ -1,6 +1,11 @@
 import './style.css';
 
-export function Lista({ name, time }) {
+export type ListaProps = {
+  name: string;
+  time: string;
+};
+
+export function Lista({ name, time }: ListaProps) {
   return (
     <div className="lista">
       <strong>{name}</strong>
